@@ -1,9 +1,0 @@
-1 HTML
-1 CSS
-Header: títulos, logos, navegadores, inicio se sesión, buscadores  etc
-
-Main:  contenido del html en general: imágenes, videos, textos, listas, formularios
-
-Footer: pie de página: de nuevo el logo, redes sociales, links complementarios, un mapita, info del desarrollador  etc
-
-entregar en drive o dropbox

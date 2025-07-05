@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  background-color: #001f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  #logo {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    max-width: 600px;
+  }
+}

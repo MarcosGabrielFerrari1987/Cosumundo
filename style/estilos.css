@@ -1,4 +1,3 @@
-/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +12,8 @@ body {
   font-size: 16px;
 }
 
-/* HEADER */
 header {
-  width: 100vw;
+  width: 100%;
   background-color: #001f3f;
   display: flex;
   justify-content: center;
@@ -24,7 +22,6 @@ header {
   margin: 0;
 }
 
-/* LOGO */
 #logo {
   width: 100%;
   max-width: 600px;
@@ -34,7 +31,6 @@ header {
   object-fit: contain;
 }
 
-/* NAV */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +56,6 @@ header {
   background-color: #0056b3;
 }
 
-/* TITULOS */
 .titulo {
   color: blue;
   font-size: 2rem;
@@ -82,8 +77,12 @@ h2 {
   text-align: center;
   background-color: aliceblue;
 }
+.carousel-item img {
+  max-height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
 
-/* LISTADO DE PRODUCTOS */
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -108,7 +107,6 @@ li img {
   margin-bottom: 1rem;
 }
 
-/* FOOTER */
 footer {
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -117,7 +115,6 @@ footer {
   color: #555;
 }
 
-/* MEDIA QUERIES */
 @media (min-width: 600px) {
   html {
     font-size: 18px;

@@ -1,35 +1,40 @@
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* GENERAL */
+html,
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  padding: 1rem;
   font-size: 16px;
 }
 
-/* HEADER Y LOGO */
+/* HEADER */
 header {
+  width: 100vw;
+  background-color: #001f3f;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: #001f3f; /* Fondo opcional */
 }
 
+/* LOGO */
 #logo {
   width: 100%;
   max-width: 600px;
   height: auto;
-  object-fit: contain;
+  display: block;
   padding: 1rem;
+  object-fit: contain;
 }
 
-/* NAV BUTTONS */
+/* NAV */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +64,6 @@ header {
 .titulo {
   color: blue;
   font-size: 2rem;
-  font-family: Arial, sans-serif;
   text-align: center;
   background-color: aliceblue;
   margin: 2rem 0;
@@ -68,7 +72,6 @@ header {
 .segundotitulo {
   color: blueviolet;
   font-size: 1rem;
-  font-family: Arial, sans-serif;
   text-align: center;
   background-color: aliceblue;
 }
@@ -76,7 +79,6 @@ header {
 h2 {
   color: blue;
   font-size: 1.8rem;
-  font-family: Arial, sans-serif;
   text-align: center;
   background-color: aliceblue;
 }
@@ -116,26 +118,19 @@ footer {
 }
 
 /* MEDIA QUERIES */
-
-/* Tablets */
 @media (min-width: 600px) {
-  body {
+  html {
     font-size: 18px;
-    padding: 20px;
   }
-
   #logo {
     max-width: 500px;
   }
 }
 
-/* Escritorio */
 @media (min-width: 1024px) {
-  body {
+  html {
     font-size: 20px;
-    padding: 30px;
   }
-
   #logo {
     max-width: 600px;
   }

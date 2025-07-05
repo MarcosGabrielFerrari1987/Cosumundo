@@ -1,74 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-
-.nav {
-  display: flex;
-  position: sticky;
-  gap: 10px;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.button {
-  text-decoration: none;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-#logo {
-  width: 49%;
-  height: 200px;
-  align-items: center;
-  background-color: blue;
-}
-
-#logo2 {
-  width: 50%;
-  height: 200px;
-  align-items: center;
-  background-color: blue;
-}
-
-.titulo {
-  color: blue;
-  font-size: 30px;
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  background-color: aliceblue;
-}
-
-.segundotitulo {
-  color: blueviolet;
-  font-size: 15px;
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  background-color: aliceblue;
-}
-
-h2 {
-  color: blue;
-  font-size: 30px;
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  background-color: aliceblue;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* RESET BÁSICO */
-* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -78,21 +8,25 @@ a {
 body {
   font-family: Arial, sans-serif;
   padding: 1rem;
+  font-size: 16px;
 }
 
+/* HEADER Y LOGO */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  background-color: #001f3f; /* Fondo opcional */
 }
 
-/* TÍTULO */
-.titulo {
-  text-align: center;
-  font-size: 2rem;
-  margin: 2rem 0;
+#logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  padding: 1rem;
 }
 
 /* NAV BUTTONS */
@@ -101,29 +35,50 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-#logo,
-#logo2 {
-  max-width: 50%;
-  height: 200px;
+  margin: 2rem 0;
 }
 
 .button {
+  text-decoration: none;
   background-color: #007bff;
   color: white;
   padding: 0.7rem 1.2rem;
-  border: none;
   border-radius: 5px;
-  text-decoration: none;
+  font-weight: bold;
   font-size: 1rem;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
   background-color: #0056b3;
+}
+
+/* TITULOS */
+.titulo {
+  color: blue;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: aliceblue;
+  margin: 2rem 0;
+}
+
+.segundotitulo {
+  color: blueviolet;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+h2 {
+  color: blue;
+  font-size: 1.8rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: aliceblue;
 }
 
 /* LISTADO DE PRODUCTOS */
@@ -160,67 +115,28 @@ footer {
   color: #555;
 }
 
-/* Estilos para dispositivos móviles */
-body {
-  font-size: 16px;
-  padding: 10px;
-}
+/* MEDIA QUERIES */
 
-/* Media query para tabletas */
+/* Tablets */
 @media (min-width: 600px) {
   body {
     font-size: 18px;
     padding: 20px;
   }
+
+  #logo {
+    max-width: 500px;
+  }
 }
 
-/* Media query para computadoras de escritorio */
+/* Escritorio */
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
     padding: 30px;
   }
-}
 
-/* Estilos para dispositivos móviles */
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Media query para tabletas y computadoras de escritorio */
-@media (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-/* Estilos para dispositivos móviles */
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Media query para tabletas y computadoras de escritorio */
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-/* Estilos para dispositivos móviles */
-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-  img {
-    width: 50%;
+  #logo {
+    max-width: 600px;
   }
 }

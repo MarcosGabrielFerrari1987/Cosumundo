@@ -28,3 +28,37 @@ body {
     font-size: 20px;
   }
 }
+#redes-sociales {
+  text-align: center;
+  padding: 20px;
+
+  .iconos-redes {
+    margin-top: 10px;
+
+    i {
+      font-size: 64px;
+      color: #333;
+      margin: 0 15px;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        color: #0077ff;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 3s ease-in-out;
+}

@@ -1,279 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="BienTek es una empresa apasionada por la venta de productos tecnológicos. Tenemos variedad de productos seleccionados por los que saben."
-    />
-    <meta
-      name="keywords"
-      content="BienTek, bientek, Bientek, productos tecnológicos, tecnología, computadoras, celulares, camaras digitales, televisores"
-    />
-    <title>BienTek</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+    <title>CONSUMUNDO</title>
     <link rel="stylesheet" href="./style/estilos.css" />
   </head>
   <body>
     <header>
-      <img id="logo" src="./images/logobientek.png" alt="Logo de BienTek" />
+      <img
+        id="logo"
+        src="./images/logoconsumundo.png"
+        alt="Logo de CONSUMUNDO"
+      />
     </header>
-    <main class="container d-flex flex-column align-items-center text-center">
-      <h1 class="titulo animate-fade-in">Nuestros Productos</h1>
 
-      <nav class="nav">
-        <a href="./pages/computadoras.html" class="button"> Computadoras </a>
-        <a href="./pages/celulares.html" class="button"> Celulares </a>
-        <a href="./pages/televisores.html" class="button"> Televisores </a>
-        <a href="./pages/camarasdigitales.html" class="button"
-          >Cámaras Digitales</a
-        >
-        <a href="./pages/otrosproductos.html" class="button">Otros productos</a>
-      </nav>
+    <main class="container">
+      <h1 class="titulo">Nuestros Productos</h1>
 
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="9"
-            aria-label="Slide 10"
-          ></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center">
-            <img
-              src="./images/camarasony.png"
-              class="d-block mx-auto img-carousel"
-              alt="Cámara Sony"
-            />
-            <h5>CAMARA DIGITAL SONY DSC-W830</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/gopro.png"
-              class="d-block mx-auto img-carousel"
-              alt="GoPro"
-            />
-            <h5>Cámara GoPro Hero 13 Mini 4K/UHD</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/celularxiaomi.png"
-              class="d-block mx-auto img-carousel"
-              alt="Xiaomi Redmi"
-            />
-            <h5>Celular Xiaomi Redmi A3 3GB 64Gb (Negro)</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/celularsamsung.png"
-              class="d-block mx-auto img-carousel"
-              alt="Samsung A34"
-            />
-            <h5>SAMSUNG CELULAR LIBRE SM-A346MZS A34</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/hp.png"
-              class="d-block mx-auto img-carousel"
-              alt="Notebook HP"
-            />
-            <h5>NOTEBOOK HP 14″ MODELO 14-DQ2536LA</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/surface.png"
-              class="d-block mx-auto img-carousel"
-              alt="Surface Studio"
-            />
-            <h5>MICROSOFT SURFACE STUDIO 2+ 28″</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/tecladogamer.png"
-              class="d-block mx-auto img-carousel"
-              alt="Teclado Gamer"
-            />
-            <h5>TECLADO GAMER RETROILUMINADO NKB-5020</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/asuswebcam.png"
-              class="d-block mx-auto img-carousel"
-              alt="ASUS Webcam"
-            />
-            <h5>ASUS WEB CAM C3</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/smartv.png"
-              class="d-block mx-auto img-carousel"
-              alt="Samsung Smart TV"
-            />
-            <h5>Smart TV Samsung 43 UHD LED CU7000</h5>
-          </div>
-          <div class="carousel-item text-center">
-            <img
-              src="./images/philips.png"
-              class="d-block mx-auto img-carousel"
-              alt="TV Philips"
-            />
-            <h5>TV Philips HD 24" 24PHD5565/77</h5>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-
-      <ul>
+      <ul id="productos">
         <li>
-          <img src="./images/camarasony.png" />
+          <img src="./images/camarasony.png" alt="Cámara Sony" />
           <p>CAMARA DIGITAL SONY DSC-W830</p>
-          <button class="button">Comprar</button>
+          <p class="precio">$527.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/gopro.png" />
-          <p>Cámara GoPro Hero 13 Mini 4K/UHD</p>
-          <button class="button">Comprar</button>
+          <img src="./images/gopro.png" alt="GoPro Hero 13 Black" />
+          <p>Cámara GoPro Hero 13 Black</p>
+          <p class="precio">$706.798</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/celularxiaomi.png" />
-          <p>Celular Xiaomi Redmi A3 3GB 64Gb (Negro)</p>
-          <button class="button">Comprar</button>
+          <img src="./images/celularxiaomi.png" alt="Xiaomi Redmi A3" />
+          <p>Celular Xiaomi Redmi A3 64GB / 3GB RAM</p>
+          <p class="precio">$159.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/celularsamsung.png" />
-          <p>SAMSUNG CELULAR LIBRE SM-A346MZS A34</p>
-          <button class="button">Comprar</button>
+          <img src="./images/celularsamsung.png" alt="Samsung Galaxy A34" />
+          <p>Samsung Galaxy A34 5G 128GB</p>
+          <p class="precio">$264.599</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/hp.png" />
-          <p>NOTEBOOK HP 14″ PULGADAS MODELO 14-DQ2536LA</p>
-          <button class="button">Comprar</button>
+          <img src="./images/hp.png" alt="Notebook HP 14" />
+          <p>Notebook HP 14" (Core i3, 8GB RAM, 512GB SSD)</p>
+          <p class="precio">$1.657.695</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/surface.png" />
-          <p>MICROSOFT SURFACE STUDIO 2+ 28″</p>
-          <button class="button">Comprar</button>
+          <img src="./images/surface.png" alt="Microsoft Surface Studio 2+" />
+          <p>Microsoft Surface Studio 2+</p>
+          <p class="precio">$1.562.664</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/tecladogamer.png" />
-          <p>TECLADO GAMER RETROILUMINADO NKB-5020 STORMER SERIES</p>
-          <button class="button">Comprar</button>
+          <img
+            src="./images/tecladogamer.png"
+            alt="Teclado Gamer Noga NKB-5020"
+          />
+          <p>Teclado Gamer Noga NKB-5020</p>
+          <p class="precio">$90.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/asuswebcam.png" />
-          <p>ASUS WEB CAM C3</p>
-          <button class="button">Comprar</button>
+          <img src="./images/asuswebcam.png" alt="ASUS Webcam C3" />
+          <p>ASUS Webcam C3</p>
+          <p class="precio">$60.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/smartv.png" />
-          <p>Smart TV Samsung 43 UHD LED CU7000</p>
-          <button class="button">Comprar</button>
+          <img src="./images/smartv.png" alt="Smart TV Samsung 43" />
+          <p>Smart TV Samsung 43" UHD LED CU7000</p>
+          <p class="precio">$450.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
         <li>
-          <img src="./images/philips.png" />
-          <p>TV Philips HD 24" 24PHD5565/77</p>
-          <button class="button">Comprar</button>
+          <img src="./images/philips.png" alt="TV Philips 24" />
+          <p>TV Philips 24" 24PHD5565/77</p>
+          <p class="precio">$160.000</p>
+          <button class="button agregar-carrito">Agregar al carrito</button>
         </li>
       </ul>
 
-      <a href="./pages/contacto.html" class="button">Contactanos</a>
+      <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <button id="vaciar-carrito" class="button">Vaciar Carrito</button>
+      </section>
     </main>
 
     <footer>
-      Aviso: Todas las imágenes mostradas son sólo para fines ilustrativos y
-      pueden no ser la representación exacta del producto.
+      Aviso: Todas las imágenes mostradas son sólo para fines ilustrativos.
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

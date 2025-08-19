@@ -43,7 +43,7 @@ botonesComprar.forEach((boton) => {
   boton.addEventListener("click", () => {
     const li = boton.parentElement;
     const nombre = li.querySelector("p").textContent;
-    const precioTexto = li.querySelector("span.precio").textContent;
+    const precioTexto = li.querySelector("p.precio").textContent;
     const precio = parseInt(precioTexto.replace(/\D/g, ""), 10); // elimina $ y puntos
 
     agregarAlCarrito(nombre, precio);
